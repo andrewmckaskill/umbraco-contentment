@@ -29,6 +29,7 @@ namespace Umbraco.Community.Contentment.Composing
                 .Services
                     .AddSingleton<ConfigurationEditorUtility>()
                     .AddSingleton<IContentmentContentContext, ContentmentContentContext>()
+                    .AddSingleton<IContentmentEntityContext, ContentmentEntityContext>()
                     .Configure<ContentmentSettings>(builder.Config.GetSection(Constants.Internals.ConfigurationSection))
              ;
 
